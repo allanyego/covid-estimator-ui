@@ -1,0 +1,34 @@
+.Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75em;
+  font-weight: 600;
+  padding: 0.6em 1em;
+  border-radius: 0.25em;
+  background-color: #dfe5ec;
+  color: #16191d;
+  border: none;
+  box-shadow: 0 3px 1px #5d6063;
+  transition: .25s ease-in-out;
+}
+
+.Btn.Btn-sm {
+  font-size: 0.55em;
+  font-weight: 600;
+  padding: 0.4em 0.8em;
+}
+
+.Btn:disabled {
+  background-color: #7f8488;
+}
+
+.Btn:hover {
+  background-color: #eff6ff;
+  transform: translateY(-5%);
+}
+
+.Btn:disabled:hover {
+  background-color: #7f8488;
+  transform: none;
+}

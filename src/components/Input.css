@@ -1,0 +1,35 @@
+div.Input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+div.Input label {
+  display: block;
+  font-size: 0.7em;
+  margin-bottom: 0.3em;
+  color: #d6d8da;
+}
+
+input, select {
+  flex-grow: 1;
+  padding: 0.75em;
+  background-color: #757677;
+  outline: none;
+  border: .105em solid #757677;
+  border-radius: .15em;
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+  transition: 0.5s;
+}
+
+input::placeholder {
+  color: #16191d;
+}
+
+input:focus, select:focus {
+  background-color: #dfe5ec;
+  border-color: #dfe5ec;
+  color: #16191d;
+  caret-color: #16191d;
+}

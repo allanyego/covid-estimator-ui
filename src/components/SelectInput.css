@@ -1,0 +1,15 @@
+select {
+  padding: 0.75em;
+  background-color: #16191d;
+  outline: none;
+  border: .1em solid #757677;
+  border-radius: .15em;
+  color: #757677;
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+}
+
+select:focus {
+  border: .1em solid #dfe5ec;
+  color: #dfe5ec;
+}

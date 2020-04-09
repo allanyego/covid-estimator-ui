@@ -1,23 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+
+import Form from './components/Form';
+import Results from './components/Results';
 import './App.css';
 
 function App() {
+  const [data, setData] = useState(null);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Form onData={setData} />
+        <Results {...data} />
+        <code>
+          <span>
+            The following is assumed and extended to the data user provides.
+          </span>
+          <pre>
+{`region: {
+  name: "Africa",
+  avgAge: 19.7,
+  avgDailyIncomeInUSD: 5,
+  avgDailyIncomePopulation: 0.71
+}`}
+          </pre>
+        </code>
       </header>
     </div>
   );

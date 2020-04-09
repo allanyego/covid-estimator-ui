@@ -1,0 +1,34 @@
+.FormContainer {
+  padding: 1.7em;
+  max-width: 500px;
+  background-color: #16191d;
+  border-radius: 0.3em;
+}
+
+.FormContainer form {
+  width: 100%;
+  display: grid;
+  grid-gap: 0.7em;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+form div.Btn-container {
+  width: 100%;
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: calc(3vmin);
+}
+
+form div.Btn-container button {
+  width: 90%;
+}
+
+@media (max-width: 360px) {
+  .FormContainer form {
+    grid-template-columns: none;
+    grid-auto-rows: repeat(auto-fit, auto);
+  }
+}

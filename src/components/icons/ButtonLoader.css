@@ -1,0 +1,14 @@
+.BtnLoader {
+  width: 1.5em;
+  transform-origin: center;
+  animation: Spin 1s linear infinite;
+}
+
+@keyframes Spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

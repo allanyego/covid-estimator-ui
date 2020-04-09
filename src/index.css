@@ -10,4 +10,15 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  margin-top: calc(2vmin);
+  width: 60vmin;
+  font-size: 0.65em;
+}
+
+code span {
+  font-weight: 700;
+}
+
+code pre {
+  font-size: 0.9em;
 }
