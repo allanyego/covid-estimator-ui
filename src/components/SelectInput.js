@@ -5,6 +5,10 @@ export default function SelectInput({ name, onChange, value }) {
     [`data-${name}`]: ''
   }
 
+  function onSelect(event) {
+    onChange(event.target.value);
+  }
+
   return (
     <div className="Input">
       <label htmlFor={name}>{name.split('-').join(' ')}</label>
@@ -12,7 +16,7 @@ export default function SelectInput({ name, onChange, value }) {
         id={name}
         name={name} /* defaultValue="months" */
         value={value}
-        onChange={onChange}
+        onChange={onSelect}
         {...attributeBag}
       >
 

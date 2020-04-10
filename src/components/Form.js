@@ -10,7 +10,7 @@ import './Input.css';
 
 function sleep() {
   return new Promise((resolve, _reject) => {
-    setTimeout(resolve, 3500);
+    setTimeout(resolve, 1500);
   });
 }
 
@@ -22,26 +22,9 @@ export default function Form({onData}) {
   const [totalHospitalBeds, setTotalHospitalBeds] = useState('');
   const [loading, setLoading] = useState(false);
 
-  function onPopulationChange(event) {
-    setPopulation(event.target.value);
-  }
-  function onReportedCasesChange(event) {
-    setReportedCases(event.target.value);
-  }
-  function onTimeToElapseChange(event) {
-    setTimeToElapse(event.target.value);
-  }
-  function onPeriodTypeChange(event) {
-    setPeriodType(event.target.value);
-  }
-  function onTotalHospitalBedsChange(event) {
-    setTotalHospitalBeds(event.target.value);
-  }
-
   async function onSubmit(event) {
     event.preventDefault();
     setLoading(true);
-
     
     const requestData = {
       population,
@@ -72,7 +55,7 @@ export default function Form({onData}) {
           placeholder="population"
           name="population"
           value={population}
-          onChange={onPopulationChange}
+          onChange={setPopulation}
           type="number"
           required
           min={1} />
@@ -80,7 +63,7 @@ export default function Form({onData}) {
           placeholder="reported cases"
           name="reported-cases"
           value={reportedCases}
-          onChange={onReportedCasesChange}
+          onChange={setReportedCases}
           type="number"
           required
           min={1} />
@@ -88,19 +71,19 @@ export default function Form({onData}) {
           placeholder="time to elapse"
           name="time-to-elapse"
           value={timeToElapse}
-          onChange={onTimeToElapseChange}
+          onChange={setTimeToElapse}
           type="number"
           required
           min={1} />
         <SelectInput
           name="period-type"
           value={periodType}
-          onChange={onPeriodTypeChange} />
+          onChange={setPeriodType} />
         <Input
           placeholder="total hospital beds"
           name="total-hospital-beds"
           value={totalHospitalBeds}
-          onChange={onTotalHospitalBedsChange}
+          onChange={setTotalHospitalBeds}
           type="number"
           required
           min={1} />
@@ -108,7 +91,8 @@ export default function Form({onData}) {
         <div className="Btn-container">
           <Button
             value="Get estimate"
-            loading={loading} />
+            loading={loading}
+            data-go-estimate />
         </div>
       </form>
     </div>

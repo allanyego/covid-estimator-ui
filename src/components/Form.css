@@ -11,6 +11,7 @@
   grid-gap: 0.7em;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: auto; */
 }
 
 form div.Btn-container {
@@ -26,9 +27,8 @@ form div.Btn-container button {
   width: 90%;
 }
 
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
   .FormContainer form {
-    grid-template-columns: none;
-    grid-auto-rows: repeat(auto-fit, auto);
+    grid-template-columns: 1fr;
   }
-}
+} */

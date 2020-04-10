@@ -2,10 +2,18 @@ import React from 'react';
 
 export default function Input({
   /* dataString, */
-  name, onChange, placeholder, value, ...rest
+  name,
+  onChange,
+  placeholder,
+  value,
+  ...rest
 }) {
   const attributeBag = {
     [`data-${name}`]: ''
+  }
+  
+  function onInput(event) {
+    onChange(event.target.value);
   }
 
   return (
@@ -17,7 +25,7 @@ export default function Input({
         placeholder={placeholder}
         name={name}
         value={value}
-        onChange={onChange}
+        onChange={onInput}
         {...rest}
         {...attributeBag} />
     </div>
