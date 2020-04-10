@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/covid-estimator-ui/precache-manifest.4973a727ebaac604ff82e9912fa77b15.js"
+  "/covid-estimator-ui/precache-manifest.a8ed84e9f22f0d155b442468ca226a19.js"
 );
 
 self.addEventListener('message', (event) => {
