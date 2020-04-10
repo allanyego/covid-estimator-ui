@@ -6,6 +6,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(12px + 2vmin);
   color: white;
+}
+
+.PaintLoader {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.3em;
+  margin: auto;
+  top: calc(50% - 35px);
 }

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
 
-import Form from './components/Form';
-import Results from './components/Results';
+import PaintLoader from './components/PaintLoader';
 import './App.css';
+
+const Form = React.lazy(() => import('./components/Form'));
+const Results = React.lazy(() => import('./components/Results'));
 
 function App() {
   const [data, setData] = useState(null);
@@ -10,21 +12,23 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Form onData={setData} />
-        <Results {...data} />
-        <code>
-          <span>
-            The following is assumed and extended to the data user provides.
+        <Suspense fallback={<PaintLoader />}>
+          <Form onData={setData} />
+          <Results {...data} />
+          <code>
+            <span>
+              The following is assumed and extended to the data user provides.
           </span>
-          <pre>
+            <pre>
 {`region: {
   name: "Africa",
   avgAge: 19.7,
   avgDailyIncomeInUSD: 5,
   avgDailyIncomePopulation: 0.71
 }`}
-          </pre>
-        </code>
+            </pre>
+          </code>
+        </Suspense>
       </header>
     </div>
   );
