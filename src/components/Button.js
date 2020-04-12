@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ButtonLoader from './icons/ButtonLoader';
+// import ButtonLoader from './icons/ButtonLoader';
 import './Button.css';
 
 export default function Button({ 
@@ -13,14 +13,13 @@ export default function Button({
   size = size ? (' Btn-' + size) : '';
 
   return(
-    <button
+    <input
+      type="submit"
       className={'Btn' + size}
       disabled={loading}
       onClick={onClick}
       {...rest}
-      >
-
-      { loading ? <ButtonLoader /> : value }
-    </button>
+      value={loading ? 'loading...' : value}
+      />
   );
 }
