@@ -91,8 +91,7 @@ export default function Form({onData}) {
         <div className="Btn-container">
           <Button
             value="Get estimate"
-            loading={loading}
-            data-go-estimate />
+            loading={loading} />
         </div>
       </form>
     </div>

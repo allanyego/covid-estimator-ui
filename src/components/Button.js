@@ -7,8 +7,7 @@ export default function Button({
   value,
   loading, 
   onClick, 
-  size,
-  ...rest
+  size
 }) {
   size = size ? (' Btn-' + size) : '';
 
@@ -18,7 +17,7 @@ export default function Button({
       className={'Btn' + size}
       disabled={loading}
       onClick={onClick}
-      {...rest}
+      data-go-estimate
       value={loading ? 'loading...' : value}
       />
   );
