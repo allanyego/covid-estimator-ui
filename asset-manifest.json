@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/covid-estimator-ui/static/css/main.e29c406c.chunk.css",
-    "main.js": "/covid-estimator-ui/static/js/main.964f7702.chunk.js",
-    "main.js.map": "/covid-estimator-ui/static/js/main.964f7702.chunk.js.map",
-    "runtime-main.js": "/covid-estimator-ui/static/js/runtime-main.a871e7a2.js",
-    "runtime-main.js.map": "/covid-estimator-ui/static/js/runtime-main.a871e7a2.js.map",
+    "main.js": "/covid-estimator-ui/static/js/main.6eca7aa4.chunk.js",
+    "main.js.map": "/covid-estimator-ui/static/js/main.6eca7aa4.chunk.js.map",
+    "runtime-main.js": "/covid-estimator-ui/static/js/runtime-main.50def88c.js",
+    "runtime-main.js.map": "/covid-estimator-ui/static/js/runtime-main.50def88c.js.map",
     "static/css/2.aad7b20f.chunk.css": "/covid-estimator-ui/static/css/2.aad7b20f.chunk.css",
-    "static/js/2.2f4763e9.chunk.js": "/covid-estimator-ui/static/js/2.2f4763e9.chunk.js",
-    "static/js/2.2f4763e9.chunk.js.map": "/covid-estimator-ui/static/js/2.2f4763e9.chunk.js.map",
+    "static/js/2.f2830063.chunk.js": "/covid-estimator-ui/static/js/2.f2830063.chunk.js",
+    "static/js/2.f2830063.chunk.js.map": "/covid-estimator-ui/static/js/2.f2830063.chunk.js.map",
     "static/css/3.2962f52d.chunk.css": "/covid-estimator-ui/static/css/3.2962f52d.chunk.css",
-    "static/js/3.e33b7594.chunk.js": "/covid-estimator-ui/static/js/3.e33b7594.chunk.js",
-    "static/js/3.e33b7594.chunk.js.map": "/covid-estimator-ui/static/js/3.e33b7594.chunk.js.map",
+    "static/js/3.69a94555.chunk.js": "/covid-estimator-ui/static/js/3.69a94555.chunk.js",
+    "static/js/3.69a94555.chunk.js.map": "/covid-estimator-ui/static/js/3.69a94555.chunk.js.map",
     "static/js/4.4e16e6fd.chunk.js": "/covid-estimator-ui/static/js/4.4e16e6fd.chunk.js",
     "static/js/4.4e16e6fd.chunk.js.map": "/covid-estimator-ui/static/js/4.4e16e6fd.chunk.js.map",
     "index.html": "/covid-estimator-ui/index.html",
-    "precache-manifest.2744419cc9b04c5b8f214931619dddf0.js": "/covid-estimator-ui/precache-manifest.2744419cc9b04c5b8f214931619dddf0.js",
+    "precache-manifest.f8e24840df79fb7b0311df96075fb4d5.js": "/covid-estimator-ui/precache-manifest.f8e24840df79fb7b0311df96075fb4d5.js",
     "service-worker.js": "/covid-estimator-ui/service-worker.js",
     "static/css/2.aad7b20f.chunk.css.map": "/covid-estimator-ui/static/css/2.aad7b20f.chunk.css.map",
     "static/css/3.2962f52d.chunk.css.map": "/covid-estimator-ui/static/css/3.2962f52d.chunk.css.map",
@@ -22,9 +22,9 @@
     "static/js/4.4e16e6fd.chunk.js.LICENSE.txt": "/covid-estimator-ui/static/js/4.4e16e6fd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a871e7a2.js",
+    "static/js/runtime-main.50def88c.js",
     "static/js/4.4e16e6fd.chunk.js",
     "static/css/main.e29c406c.chunk.css",
-    "static/js/main.964f7702.chunk.js"
+    "static/js/main.6eca7aa4.chunk.js"
   ]
 }
