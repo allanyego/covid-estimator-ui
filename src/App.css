@@ -21,3 +21,7 @@
   margin: auto;
   top: calc(50% - 35px);
 }
+
+code, pre {
+  font-size: 0.8em;
+}
