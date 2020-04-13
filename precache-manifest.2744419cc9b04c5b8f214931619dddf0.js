@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5bfec39a717835fd6408f39b04016a29",
+    "revision": "c6aa092c77cf9967684c9995fab08dca",
     "url": "/covid-estimator-ui/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/covid-estimator-ui/static/css/3.2962f52d.chunk.css"
   },
   {
-    "revision": "5c8dffb9e2221ce5af2a",
-    "url": "/covid-estimator-ui/static/css/main.84a93ab4.chunk.css"
+    "revision": "9d63b2f86b0a528a4fa0",
+    "url": "/covid-estimator-ui/static/css/main.e29c406c.chunk.css"
   },
   {
     "revision": "e98d768a077082068dba",
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/covid-estimator-ui/static/js/4.4e16e6fd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5c8dffb9e2221ce5af2a",
+    "revision": "9d63b2f86b0a528a4fa0",
     "url": "/covid-estimator-ui/static/js/main.964f7702.chunk.js"
   },
   {
